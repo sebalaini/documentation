@@ -8,6 +8,7 @@ Welcome to my documentation space! I set up this repo to keep track of things I 
 - [Github / git](./docs/github_git.md#github)
   - [Commands](./docs/github_git.md#commands)
   - [SSH key auth](./docs/github_git.md#ssh-key-auth)
+  - [remove GitHub attachments](./docs/github_git.md#remove-github-attachments)
 
 ### Linux
 

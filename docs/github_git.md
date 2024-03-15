@@ -43,3 +43,9 @@
   - Copy your previously created SSH key, you need to copy the `id_ed25519.pub` one.
 
 More info available in the [Github Doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+## remove GitHub attachments
+
+You can remove uploaded attachemnt via the GitHub Virtual Agent.
+- [file attachment](https://support.github.com/?q=remove+file+attachment)
+- [image attachment](https://support.github.com/?q=remove+image+attachment)
