@@ -21,3 +21,4 @@ videezy
 tinypng
 jpeg
 png
+Krog
