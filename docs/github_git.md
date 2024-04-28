@@ -20,9 +20,11 @@
 ## SSH key auth
 
 - Open Terminal and run the below code:
+
   ```
   ssh-keygen -t ed25519 -C "your_email@example.com"
   ```
+
   This creates a new SSH key, using the provided email as a label.
 
   - When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
@@ -30,6 +32,7 @@
   - At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases." or continue without a passphrase
 
 - You will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+
   - add this code to it:
     ```
     Host github.com
@@ -47,6 +50,7 @@ More info available in the [GitHub Doc](https://docs.github.com/en/authenticatio
 ## remove GitHub attachment
 
 You can remove uploaded attachment via the GitHub Virtual Agent.
+
 - [file attachment](https://support.github.com/?q=remove+file+attachment)
 - [image attachment](https://support.github.com/?q=remove+image+attachment)
 
