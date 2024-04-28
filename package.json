@@ -16,10 +16,25 @@
     "url": "https://github.com/sebalaini/documentation/issues"
   },
   "scripts": {
-    "lint:docs": "vale --config .vale.ini ./docs"
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint:docs": "vale --config .vale.ini ./docs",
+    "prepare": "husky || true"
   },
-  "packageManager": "yarn@1.22.22",
+  "prettier": "@spotify/prettier-config",
+  "lint-staged": {
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "yarn@3.8.1",
   "engines": {
     "node": "^18"
+  },
+  "devDependencies": {
+    "@spotify/prettier-config": "^15.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
   }
 }

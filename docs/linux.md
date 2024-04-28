@@ -37,11 +37,11 @@ This command enables the maximum optimization level \(-O3\) and allows `find` to
 
 #### Basic Examples
 
-| Command | Description |
-| :---    | :--- |
-| `find . -name testfile.txt` | Find a file called testfile.txt in current and sub-directories. |
-| `find /home -name \*.jpg` | Find all `.jpg` files in the `/home` and sub-directories. |
-| `find . -type f -empty` | Find an empty file within the current directory. |
+| Command                                              | Description                                                                                            |
+| :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| `find . -name testfile.txt`                          | Find a file called testfile.txt in current and sub-directories.                                        |
+| `find /home -name \*.jpg`                            | Find all `.jpg` files in the `/home` and sub-directories.                                              |
+| `find . -type f -empty`                              | Find an empty file within the current directory.                                                       |
 | `find /home -user exampleuser -mtime 7 -iname ".db"` | Find all `.db` files \(ignoring text case\) modified in the last 7 days by a user named `exampleuser`. |
 
 </details>
@@ -54,7 +54,7 @@ This command enables the maximum optimization level \(-O3\) and allows `find` to
 To run a remote script from local you need two scripts:
 
 - one on the source machine,
-- another one on the destination machine. 
+- another one on the destination machine.
 
 The script on the source machine should be something like:
 
@@ -88,7 +88,6 @@ syncuser ALL=NOPASSWD: /usr/bin/rsync, /path/to/completesync.sh
 Now running the script on the source machine should complete the whole process in one operation.
 
 </details>
-
 
 ## symlink
 
