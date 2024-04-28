@@ -18,10 +18,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: documentation quality check
-        uses: errata-ai/vale-action@reviewdog
+        uses: errata-ai/vale-action@38bf078c328061f59879b347ca344a718a736018
         with:
           reporter: github-pr-check
           fail_on_error: true
+          files: docs
           version: latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
