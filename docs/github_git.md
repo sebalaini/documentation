@@ -3,11 +3,11 @@
 ## Commands
 
 - Create useful [.gitignore](https://www.toptal.com/developers/gitignore) files for your project.
-- Reset local changes alias.
+- Reset local changes (alias).
   ```bash
   alias nah="git reset HEAD --hard && git checkout . && git clean -df ."
   ```
-- Git amend last commit using last message & push alias.
+- Git amend last commit using last message & push (alias).
   ```bash
   alias gitamendforce="git add . && git commit --amend --no-edit && git push --force"
   ```
@@ -42,10 +42,14 @@
   - Add new SSH key
   - Copy your previously created SSH key, you need to copy the `id_ed25519.pub` one.
 
-More info available in the [Github Doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+More info available in the [GitHub Doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-## remove GitHub attachments
+## remove GitHub attachment
 
-You can remove uploaded attachemnt via the GitHub Virtual Agent.
+You can remove uploaded attachment via the GitHub Virtual Agent.
 - [file attachment](https://support.github.com/?q=remove+file+attachment)
 - [image attachment](https://support.github.com/?q=remove+image+attachment)
+
+## Badges generator
+
+- [Michael Currin badge generator](https://michaelcurrin.github.io/badge-generator/#/)

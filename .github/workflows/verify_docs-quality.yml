@@ -1,0 +1,27 @@
+name: Verify Docs Quality
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths:
+      - 'docs/**'
+  workflow_dispatch:
+
+jobs:
+  check-all-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Install Vale
+        run: |
+          wget https://github.com/errata-ai/vale/releases/download/v3.4.1/vale_3.4.1_Linux_64-bit.tar.gz
+          tar -xvzf vale_3.4.1_Linux_64-bit.tar.gz vale
+          rm vale_3.4.1_Linux_64-bit.tar.gz
+
+      - name: Validate the syntax
+        run: ./vale --config=.vale.ini docs

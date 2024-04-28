@@ -2,7 +2,7 @@
 
 ## CSS triangle
 
-How to create triangles with pure CSS
+How to create a triangle with pure CSS
 
 ```css
 .left-arrow {
