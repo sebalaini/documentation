@@ -8,7 +8,8 @@ Welcome to my documentation space! I set up this repo to keep track of things I 
 - [Github / git](./docs/github_git.md#github)
   - [Commands](./docs/github_git.md#commands)
   - [SSH key auth](./docs/github_git.md#ssh-key-auth)
-  - [remove GitHub attachments](./docs/github_git.md#remove-github-attachments)
+  - [remove GitHub attachment](./docs/github_git.md#remove-github-attachment)
+  - [Badges generator](./docs/github_git.md#badges-generator)
 
 ### Linux
 
@@ -55,4 +56,4 @@ Welcome to my documentation space! I set up this repo to keep track of things I 
 - [Various](./docs/various.md)
   - [Diagrams tools](./docs/various.md#diagrams-tools)
   - [Regex](./docs/various.md#regex)
-  - [bundlephobia](./docs/various.md#bundlephobia)
+  - [Bundlephobia](./docs/various.md#bundlephobia)

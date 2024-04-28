@@ -39,10 +39,10 @@ This command enables the maximum optimization level \(-O3\) and allows `find` to
 
 | Command | Description |
 | :---    | :--- |
-| find . -name testfile.txt | Find a file called testfile.txt in current and sub-directories. |
-| find /home -name \*.jpg | Find all `.jpg` files in the `/home` and sub-directories. |
-| find . -type f -empty | Find an empty file within the current directory. |
-| find /home -user exampleuser -mtime 7 -iname ".db" | Find all `.db` files \(ignoring text case\) modified in the last 7 days by a user named exampleuser. |
+| `find . -name testfile.txt` | Find a file called testfile.txt in current and sub-directories. |
+| `find /home -name \*.jpg` | Find all `.jpg` files in the `/home` and sub-directories. |
+| `find . -type f -empty` | Find an empty file within the current directory. |
+| `find /home -user exampleuser -mtime 7 -iname ".db"` | Find all `.db` files \(ignoring text case\) modified in the last 7 days by a user named `exampleuser`. |
 
 </details>
 
@@ -79,7 +79,7 @@ Be careful to have restricted rights on this script:
 chown root:root /path/to/completesync.sh && chmod 700 /path/to/completesync.sh
 ```
 
-Last, modify `/etc/sudoers` on the destination machine so that `syncuser` can run both rsync and your script as root:
+Last, modify `/etc/sudoers` on the destination machine so that `syncuser` can run both `rsync` and your script as root:
 
 ```bash
 syncuser ALL=NOPASSWD: /usr/bin/rsync, /path/to/completesync.sh

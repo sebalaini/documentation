@@ -1,6 +1,6 @@
 # Design
 
-## Mockup generator
+## Mockups generator
 
 - [smartmockup](https://smartmockups.com/category/digital/all?filter=free)
   - [Portfolio Projects mockup](https://smartmockups.com/mockup/Wu8A4epzz)

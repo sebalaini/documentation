@@ -1,0 +1,25 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Collection of useful documentation.",
+  "homepage": "https://github.com/sebalaini/documentation#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sebalaini/documentation.git"
+  },
+  "author": "sebalaini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebalaini/documentation/issues"
+  },
+  "scripts": {
+    "lint:docs": "vale --config .vale.ini ./docs"
+  },
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": "^18"
+  }
+}
