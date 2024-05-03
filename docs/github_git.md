@@ -12,10 +12,15 @@
   alias gitamendforce="git add . && git commit --amend --no-edit && git push --force"
   ```
   The `--no-edit` reuse the last commit message.<br>
-  If you want to squash multiple commit you need to run this command:
+  If you want to squash multiple commit you need to run this command instead:
   ```bash
   $ git rebase -i HEAD~3 #where 3 is the number of commit to merge
   ```
+- Git delete local branches (alias)
+  ```bash
+  alias gitcleanlocalbranches="git fetch --prune origin && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+  ```
+  This command has to be ran on the main branch, the above command uses the `-D` instead of `-d` because there are cases where the command returns an error saying: The branch `xxx` is not fully merge. If you are sure you want to delete it, run `git branch -D xxx`.
 
 ## SSH key auth
 
