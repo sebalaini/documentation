@@ -21,6 +21,7 @@
   alias gitcleanlocalbranches="git fetch --prune origin && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
   ```
   This command has to be ran on the main branch, the above command uses the `-D` instead of `-d` because there are cases where the command returns an error saying: The branch `xxx` is not fully merge. If you are sure you want to delete it, run `git branch -D xxx`.
+- [Git housekeeping](https://milanbrankovic.medium.com/git-housekeeping-5f75faf0a2ab)
 
 ## SSH key auth
 
