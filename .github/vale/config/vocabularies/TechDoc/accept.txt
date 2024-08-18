@@ -22,3 +22,4 @@ tinypng
 jpeg
 png
 Krog
+monokai

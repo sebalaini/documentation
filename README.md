@@ -4,6 +4,11 @@ Welcome to my documentation space! I set up this repo to keep track of things I 
 
 ## Table of Content
 
+### SRE
+
+- [SRE](./docs/sre.md)
+  - [K9s](./docs/sre.md#K9s)
+
 ### Github / git
 
 - [Github / git](./docs/github_git.md#github)
