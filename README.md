@@ -8,6 +8,7 @@ Welcome to my documentation space! I set up this repo to keep track of things I 
 
 - [SRE](./docs/sre.md)
   - [K9s](./docs/sre.md#K9s)
+  - [Kubernetes](./docs/sre.md#Kubernetes)
 
 ### Github / git
 

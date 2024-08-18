@@ -23,3 +23,16 @@ jpeg
 png
 Krog
 monokai
+apiserver
+namespace
+schedulable
+unschedulable
+kubelet
+Kubectl
+rollout
+daemonset
+replicasets
+statefulsets
+Autoscaling
+autoscaler
+autoscalers
