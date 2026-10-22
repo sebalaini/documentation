@@ -26,6 +26,7 @@ monokai
 apiserver
 namespace
 namespaces
+namespaced
 schedulable
 unschedulable
 kubelet
@@ -38,3 +39,4 @@ statefulsets
 Autoscaling
 autoscaler
 autoscalers
+landingfolio
