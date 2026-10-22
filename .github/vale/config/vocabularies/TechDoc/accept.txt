@@ -25,12 +25,14 @@ Krog
 monokai
 apiserver
 namespace
+namespaces
 schedulable
 unschedulable
 kubelet
 Kubectl
 rollout
 daemonset
+daemonsets
 replicasets
 statefulsets
 Autoscaling
