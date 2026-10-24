@@ -16,14 +16,13 @@
     "url": "https://github.com/sebalaini/documentation/issues"
   },
   "scripts": {
-    "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --write .",
+    "prettier:check": "prettier --check \"**/*.md\"",
+    "prettier:fix": "prettier --write \"**/*.md\"",
     "lint:docs": "vale --config .vale.ini ./docs",
     "prepare": "husky || true"
   },
-  "prettier": "@spotify/prettier-config",
   "lint-staged": {
-    "*.md": [
+    "**/*.md": [
       "prettier --write"
     ]
   },
@@ -32,9 +31,30 @@
     "node": "^24"
   },
   "devDependencies": {
-    "@spotify/prettier-config": "^15.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10"
+  },
+  "prettier": {
+    "parser": "typescript",
+    "printWidth": 80,
+    "endOfLine": "lf",
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "singleAttributePerLine": true,
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "parser": "markdown",
+          "proseWrap": "always"
+        }
+      }
+    ]
   }
 }

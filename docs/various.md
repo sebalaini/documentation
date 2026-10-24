@@ -13,4 +13,5 @@ This documentation contains different links about different topics
 
 ## Bundlephobia
 
-find the cost of adding a `npm` package to your bundle using [Bundlephobia](https://bundlephobia.com/)
+find the cost of adding a `npm` package to your bundle using
+[Bundlephobia](https://bundlephobia.com/)

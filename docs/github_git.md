@@ -2,7 +2,8 @@
 
 ## Commands
 
-- Create useful [.gitignore](https://www.toptal.com/developers/gitignore) files for your project.
+- Create useful [.gitignore](https://www.toptal.com/developers/gitignore) files
+  for your project.
 - Reset local changes (alias).
   ```bash
   alias nah="git reset HEAD --hard && git checkout . && git clean -df ."
@@ -11,8 +12,8 @@
   ```bash
   alias gitamendforce="git add . && git commit --amend --no-edit && git push --force"
   ```
-  The `--no-edit` reuse the last commit message.<br>
-  If you want to squash multiple commit you need to run this command instead:
+  The `--no-edit` reuse the last commit message.<br> If you want to squash
+  multiple commit you need to run this command instead:
   ```bash
   $ git rebase -i HEAD~3 #where 3 is the number of commit to merge
   ```
@@ -20,7 +21,10 @@
   ```bash
   alias gitcleanlocalbranches="git fetch --prune origin && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
   ```
-  This command has to be ran on the main branch, the above command uses the `-D` instead of `-d` because there are cases where the command returns an error saying: The branch `xxx` is not fully merge. If you are sure you want to delete it, run `git branch -D xxx`.
+  This command has to be ran on the main branch, the above command uses the `-D`
+  instead of `-d` because there are cases where the command returns an error
+  saying: The branch `xxx` is not fully merge. If you are sure you want to
+  delete it, run `git branch -D xxx`.
 - [Git housekeeping](https://milanbrankovic.medium.com/git-housekeeping-5f75faf0a2ab)
 
 ## SSH key auth
@@ -33,11 +37,14 @@
 
   This creates a new SSH key, using the provided email as a label.
 
-  - When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
+  - When you're prompted to "Enter a file in which to save the key", you can
+    press Enter to accept the default file location.
 
-  - At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases." or continue without a passphrase
+  - At the prompt, type a secure passphrase. For more information, see "Working
+    with SSH key passphrases." or continue without a passphrase
 
-- You will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+- You will need to modify your `~/.ssh/config` file to automatically load keys
+  into the ssh-agent and store passphrases in your keychain.
 
   - add this code to it:
     ```
@@ -49,9 +56,11 @@
 
 - Go to your profile [SSH & GPG keys](https://github.com/settings/keys) page.
   - Add new SSH key
-  - Copy your previously created SSH key, you need to copy the `id_ed25519.pub` one.
+  - Copy your previously created SSH key, you need to copy the `id_ed25519.pub`
+    one.
 
-More info available in the [GitHub Doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+More info available in the
+[GitHub Doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ## remove GitHub attachment
 

@@ -40,7 +40,8 @@ How to create a triangle with pure CSS
 
 ## hidden elements for accessibility
 
-A useful class for hidden visual element and let the screen reader see the elements
+A useful class for hidden visual element and let the screen reader see the
+elements
 
 ```css
 .visuallyhidden {

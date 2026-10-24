@@ -1,6 +1,8 @@
 # Useful Documentation
 
-Welcome to my documentation space! I set up this repo to keep track of things I might need down the road—like how to reinstall and configure software or those rare tasks I always find myself searching for.
+Welcome to my documentation space! I set up this repo to keep track of things I
+might need down the road—like how to reinstall and configure software or those
+rare tasks I always find myself searching for.
 
 ## Table of Content
 
