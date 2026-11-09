@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/sebalaini/documentation/issues"
   },
+  "engines": {
+    "node": "^24"
+  },
   "scripts": {
     "prettier:check": "prettier --check \"**/*.md\"",
     "prettier:fix": "prettier --write \"**/*.md\"",
@@ -25,10 +28,6 @@
     "**/*.md": [
       "prettier --write"
     ]
-  },
-  "packageManager": "yarn@3.8.1",
-  "engines": {
-    "node": "^24"
   },
   "devDependencies": {
     "husky": "^9.1.7",

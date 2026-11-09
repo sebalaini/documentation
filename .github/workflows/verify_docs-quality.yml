@@ -19,13 +19,10 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v4
-
-      - name: Install Vale
-        run: |
-          wget https://github.com/errata-ai/vale/releases/download/v3.24.0/vale_3.24.0_Linux_64-bit.tar.gz
-          tar -xvzf vale_3.24.0_Linux_64-bit.tar.gz vale
-          rm vale_3.24.0_Linux_64-bit.tar.gz
+        uses: actions/checkout@v7
 
       - name: Validate the syntax
-        run: ./vale --config=.vale.ini docs
+        uses: vale-cli/vale-action@v3
+        with:
+          config: .vale.ini
+          glob: docs/**/*.md
